@@ -1,0 +1,139 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 8px 0;
+    z-index: 1000;
+    background: linear-gradient(to right, var(--accent-color), rgba(0, 0, 0, 0.4)),
+    linear-gradient(to bottom, var(--accent-color), rgba(233, 44, 27, 0)); /* Градиент от красного к прозрачному снизу */
+    color: white;
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(12px);
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    min-width: 0;
+    transition: transform 0.3s ease;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 170px;
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Плавное увеличение при наведении */
+}
+
+.logo img {
+    padding: 10px;
+    object-fit: contain;
+    filter: brightness(0) invert(0);
+}
+
+.logo:hover {
+    transform: scale(1.05); /* Увеличение логотипа при наведении */
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 1;
+    overflow: hidden;
+}
+
+.phone {
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 6px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.phone:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.lang {
+    appearance: none;
+    background: rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+    color: white;
+    padding: 6px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.lang:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.lang:focus {
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.cta {
+    padding: 6px 12px;
+    background-color: rgba(233, 44, 27, 0.1); /* Мягкий красный фон */
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(233, 44, 27, 0.2); /* Легкая тень для глубины */
+}
+
+.cta:hover {
+    background-color: var(--accent-color);
+    color: white;
+    box-shadow: 0 6px 15px rgba(233, 44, 27, 0.3);
+}
+
+.phone,
+.lang,
+.cta {
+    white-space: nowrap;
+    flex-shrink: 1;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .inner {
+        justify-content: space-between; /* Элементы остаются в одном ряду, но не переносятся */
+    }
+
+    .logo {
+        width: 120px; /* Уменьшаем ширину логотипа */
+    }
+
+    .controls {
+        gap: 8px;
+        width: 100%;
+    }
+
+    .phone, .lang, .cta {
+        font-size: 13px; /* Уменьшаем шрифт для мобильных устройств */
+        padding: 4px 8px; /* Уменьшаем отступы */
+        max-width: 100%; /* Убираем ограничение по ширине */
+        white-space: nowrap;
+    }
+}

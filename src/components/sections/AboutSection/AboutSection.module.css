@@ -1,0 +1,111 @@
+.about {
+    padding: var(--section-padding);
+    background: var(--background-color);
+    position: relative;
+    z-index: 0;
+    overflow: hidden; /* Чтобы скрыть излишки свечения */
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.about::before,
+.about::after {
+    content: '';
+    display: block;
+    width: 70%;
+    height: 2px;
+    background: rgba(233, 44, 27, 0.7); /* Красная линия */
+    position: absolute;
+    bottom: 0; /* Линия снизу */
+    left: 50%; /* По центру */
+    transform: translateX(-50%); /* Сдвигаем влево на 50% для точного выравнивания */
+    border-radius: 0 0 6px 6px;
+    box-shadow: 0 0 15px rgba(233, 44, 27, 1), 0 0 40px rgba(233, 44, 27, 0.6);
+}
+
+.about::before {
+    width: 100%;
+    top: 0; /* Линия сверху */
+    border-radius: 6px 6px 0 0;
+}
+
+.about::after {
+    width: 70%;
+    bottom: 0; /* Линия снизу */
+    border-radius: 0 0 6px 6px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    background: #1f0f0f;
+    padding: 64px 32px;
+    border-radius: var(--radius);
+    box-shadow: 0 8px 40px var(--shadow-color), 0 0 20px rgba(233, 44, 27, 0.1);
+    border: 1px solid var(--border-color);
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out; /* Добавляем плавную анимацию для свечения */
+}
+
+.container:hover {
+    box-shadow: 0 0 30px rgba(233, 44, 27, 0.3), 0 0 50px rgba(233, 44, 27, 0.15); /* Свечение при наведении */
+}
+
+.title {
+    font-size: clamp(28px, 5vw, 48px);
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--text-color);
+}
+
+.subtitle {
+    font-size: clamp(16px, 2vw, 20px);
+    color: #aaa;
+    margin-bottom: 48px;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 32px;
+}
+
+.feature {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 24px;
+    text-align: left;
+    transition: var(--transition);
+    box-shadow: 0 4px 12px rgba(255, 50, 50, 0.03);
+}
+
+.feature:hover {
+    box-shadow: 0 6px 20px rgba(255, 50, 50, 0.08);
+    transform: translateY(-2px);
+}
+
+.feature h3 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.feature h3::before {
+    content: '✨';
+    font-size: 18px;
+}
+
+.feature p {
+    font-size: 15px;
+    color: #bbb;
+    line-height: 1.6;
+    margin: 0;
+}

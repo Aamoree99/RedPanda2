@@ -1,0 +1,174 @@
+.contact {
+    padding: var(--section-padding);
+    background: #111;
+    color: white;
+    text-align: center;
+    margin-top: 50px; /* Отступ сверху от предыдущей секции */
+    border-top: 4px solid var(--accent-color); /* Верхняя линия */
+    border-bottom: 4px solid var(--accent-color); /* Нижняя линия */
+}
+
+.inner {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.title {
+    font-size: clamp(36px, 6vw, 54px);
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #aaa;
+    margin-bottom: 12px;
+}
+
+.statusLine {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    color: #bbb;
+    justify-content: center;
+    padding: 20px;
+}
+
+.statusGlow {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--accent-color) 0%, transparent 60%);
+    box-shadow: 0 0 6px var(--accent-color);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 0.9; }
+    50% { transform: scale(1.2); opacity: 0.6; }
+    100% { transform: scale(1); opacity: 0.9; }
+}
+
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 50px;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+.icon:hover {
+    background: var(--accent-color);
+    color: black;
+}
+
+.phone {
+    margin: 0 auto 32px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(4px);
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.phone:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.phoneIcon {
+    font-size: 20px;
+    color: var(--accent-color);
+}
+
+.form {
+    width: 100%;
+    max-width: 600px;
+}
+
+.formLabel {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #ccc;
+}
+
+.formRow {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.formInput {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #222;
+    padding: 12px 16px;
+    border-radius: 14px;
+    flex: 1;
+    min-width: 240px;
+}
+
+.formInput input {
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    outline: none;
+}
+
+.callButton {
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 14px;
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    white-space: nowrap;
+}
+
+.callButton:hover {
+    background: white;
+    color: var(--accent-color);
+}
+
+.map {
+    margin-top: 50px;
+    width: 100%; /* Заполняет всю ширину */
+    height: 320px; /* Высота карты */
+    border-radius: var(--radius);
+    box-shadow: 0 4px 20px rgba(233, 44, 27, 0.1);
+    overflow: hidden;
+}
+

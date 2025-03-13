@@ -1,0 +1,148 @@
+{
+  "index": "CZ",
+  "header": {
+    "hero": "Home",
+    "about": "About",
+    "insurance": "Visa Insurance",
+    "courses": "Visa Courses",
+    "clinic": "Our Clinic",
+    "carInsurance": "Car Insurance",
+    "benefits": "Why Us",
+    "contact": "Contact",
+    "contactUs": "Contact us"
+  },
+  "hero": {
+    "title": "Premium insurance & visa support",
+    "subtitle": "Tailored for people who value time, trust, and simplicity.",
+    "cta": "Explore our services",
+    "trust": "Trusted by over 100k clients \uD83C\uDDE8\uD83C\uDDFF"
+  },
+  "about": {
+    "title": "Who We Are",
+    "subtitle": "Red Panda is your trusted partner in Czechia. We offer premium insurance, visa support, and clinic services — designed for those who deserve the best.",
+    "features": [
+      {
+        "title": "✅ Certified Experts",
+        "desc": "Our team is composed of certified professionals in insurance, visa support, and legal assistance — always ready to guide you with confidence and care."
+      },
+      {
+        "title": "🌍 Multilingual Support",
+        "desc": "We speak your language fluently — English, Ukrainian, Russian, Czech, and more. No matter where you're from, you'll feel understood."
+      },
+      {
+        "title": "⚡ Fast & Personalized",
+        "desc": "Forget the bureaucracy. We work quickly and personally, tailoring every solution to your unique needs, making sure you always feel supported."
+      },
+      {
+        "title": "🔒 Complete Insurance Coverage",
+        "desc": "From health to travel, our insurance solutions cover all your needs. We ensure that you are fully protected with the best providers, at the most competitive rates."
+      },
+      {
+        "title": "💼 Visa Assistance 24/7",
+        "desc": "We provide visa support around the clock — from consultation to document submission. Rest assured, we’ll guide you through the entire process, stress-free."
+      },
+      {
+        "title": "🏥 Premium Healthcare Access",
+        "desc": "We help you find the best clinics in Czechia, offering exclusive access to Russian-speaking healthcare providers — because your health is our priority."
+      },
+      {
+        "title": "👩‍⚖️ Legal Help Anytime",
+        "desc": "Our expert legal team is available 24/7 to assist with visa or any legal matters, ensuring you always have a reliable source of support."
+      },
+      {
+        "title": "💬 100,000+ Clients and Growing",
+        "desc": "With over 100,000 satisfied clients over the last 9 years, our reputation speaks for itself. Our Google rating is 4.9 with thousands of reviews on VK and Instagram."
+      },
+      {
+        "title": "🌟 Your Trusted Partner in Emergencies",
+        "desc": "In any emergency, we are always here for you. Whether it’s health, visa, or legal help, we are by your side 24/7, ensuring that you never feel alone."
+      }
+    ]
+  },
+  "services": {
+    "courses": {
+      "title": "Visa Courses & Prices",
+      "halfYear": "Half year",
+      "fullYear": "Full year",
+      "button": "Apply for courses",
+      "list": [
+        {
+          "name": "University with internal nostrification",
+          "fullYear": "60,000 Kč"
+        },
+        {
+          "name": "Visa 99 type (Ostatní)",
+          "halfYear": "18,000 Kč",
+          "fullYear": "30,000 Kč"
+        },
+        {
+          "name": "Visa 23/24 type (Studium)",
+          "halfYear": "38,000 Kč",
+          "fullYear": "60,000 Kč"
+        }
+      ],
+      "img": "Visa Courses"
+    },
+    "visaInsurance": {
+      "title": "Visa Insurance",
+      "description": "We help you get official visa insurance quickly and easily — fully online and with expert support.",
+      "points": [
+        "We help you choose the best insurance",
+        "We prepare all necessary documents",
+        "Everything is official and 100% online"
+      ],
+      "button": "Get insurance",
+      "img": "Visa Insurance"
+    },
+    "carInsurance": {
+      "title": "Car Insurance & Registration",
+      "description": "We help you insure and register your car with the best conditions — fully online, fast and reliable.",
+      "points": [
+        "We compare all offers for you",
+        "We handle registration and documents",
+        "You get insurance without visiting offices"
+      ],
+      "button": "Get car insurance",
+      "img": "Car Insurance"
+    },
+    "clinic": {
+      "title": "Our Clinic",
+      "description": "Our private licensed clinic in Prague offers fast and comfortable care — with friendly doctors, top-tier service, and support in your language.",
+      "points": [
+        "Official medical license in Czechia",
+        "Russian-speaking doctors and staff",
+        "All major insurances accepted",
+        "Modern equipment and zero bureaucracy",
+        "Appointments within 24 hours",
+        "We are trusted by 10,000+ expats"
+      ],
+      "img": "Clinic",
+      "button": "Book appointment"
+    },
+    "other": {
+      "title": "Why people trust us",
+      "subtitle": "More than just a service — we’re always by your side.",
+      "items": [
+        "Legal assistance",
+        "24/7 support anytime you need",
+        "9 years of experience",
+        "100,000+ happy clients",
+        "Fully licensed and official",
+        "Translation services",
+        "Bank account statements for visa purposes",
+        "Assistance with visa extension",
+        "And much more!",
+        "Petr — because who else would you trust with your life?"
+      ]
+    }
+
+  },
+  "contact": {
+    "title": "Get in touch",
+    "subtitle": "Contact us through messengers, call us, or leave your number — we’ll call you back.",
+    "statusLine": "Available now — message us anytime",
+    "callNow": "Call us now",
+    "leaveNumber": "Leave your phone number",
+    "callMe": "Call me"
+  }
+}

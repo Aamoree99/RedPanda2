@@ -1,0 +1,22 @@
+.footer {
+    padding: 16px 0;
+    text-align: center;
+    font-size: 14px;
+    color: rgba(var(--accent-color-rgb), 0.5); /* Используем акцентный цвет с альфа-каналом */
+    background: transparent; /* Прозрачный фон */
+}
+
+.footer a {
+    color: rgba(var(--accent-color-rgb), 0.7); /* Прозрачный цвет для ссылки */
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.footer a:hover {
+    opacity: 0.8;
+}
+
+.footer-text {
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.6); /* Светлый текст с прозрачностью */
+}

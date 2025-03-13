@@ -1,0 +1,58 @@
+.services {
+    padding: var(--section-padding);
+    background: var(--background-color);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    position: relative;
+}
+
+.container > *:not(:last-child) {
+    border-bottom: 1px solid var(--accent-color);
+    padding-bottom: 64px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container > *:not(:last-child)::after {
+    content: '';
+    display: block;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--accent-color), transparent);
+    margin-top: 64px;
+    opacity: 0.3;
+}
+
+.container > *:last-child {
+    position: relative;
+    border: 1px solid var(--accent-color);
+    border-radius: var(--radius);
+    padding: 64px 32px;
+    background: rgba(233, 44, 27, 0.02); /* лёгкий оттенок фона */
+    box-shadow: 0 0 60px rgba(233, 44, 27, 0.05); /* мягкое свечение */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* плавные изменения */
+}
+
+.container > *:last-child::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--accent-color), transparent);
+    opacity: 0.3;
+}
+
+/* Эффект при наведении */
+.container > *:hover {
+    transform: translateY(-5px); /* Поднимаем элемент */
+    box-shadow: 0 0 20px rgba(233, 44, 27, 0.2), 0 0 60px rgba(233, 44, 27, 0.1); /* Увеличиваем свечение */
+}
+
+.container > *:last-child:hover {
+    transform: translateY(-5px); /* Поднимаем последний элемент */
+    box-shadow: 0 0 40px rgba(233, 44, 27, 0.3), 0 0 80px rgba(233, 44, 27, 0.15); /* Яркое свечение для последнего элемента */
+}
