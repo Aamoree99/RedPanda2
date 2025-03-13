@@ -19,6 +19,7 @@ const CoursesBlock = () => {
             <div className="container">
                 <div className={styles.inner}>
                     <div className={styles.image}>
+                        <img src="src/assets/courses.jpg" alt="Courses"/>
                         <span className={styles.label}>{t('services.courses.img')}</span>
                     </div>
 

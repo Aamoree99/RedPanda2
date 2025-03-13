@@ -27,6 +27,7 @@ const VisaInsuranceBlock = () => {
                     </div>
 
                     <div className={styles.image}>
+                        <img src="src/assets/mainins.jpg" alt="Insuranse"/>
                         <span className={styles.label}>{t('services.visaInsurance.img')}</span>
                     </div>
                 </div>

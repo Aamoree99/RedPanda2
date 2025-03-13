@@ -26,6 +26,7 @@ const ClinicBlock = () => {
                     </div>
 
                     <div className={styles.image}>
+                        <img src="src/assets/clinic.jpg" alt="Clinic"/>
                         <span className={styles.label}>{t('services.clinic.img')}</span>
                     </div>
                 </div>

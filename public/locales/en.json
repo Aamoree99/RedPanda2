@@ -9,7 +9,8 @@
     "carInsurance": "Car Insurance",
     "benefits": "Why Us",
     "contact": "Contact",
-    "contactUs": "Contact us"
+    "contactUs": "Contact us",
+    "reviews": "Reviews"
   },
   "hero": {
     "title": "Premium insurance & visa support",
@@ -144,5 +145,9 @@
     "callNow": "Call us now",
     "leaveNumber": "Leave your phone number",
     "callMe": "Call me"
+  },
+  "reviews": {
+    "title": "What people say about us"
   }
+
 }

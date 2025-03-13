@@ -31,8 +31,9 @@ const Header = () => {
         <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
             <div className="container">
                 <div className={styles.inner}>
-                    <div className={styles.logo}>
-                        <img src="/logo.svg" alt="Red Panda logo" />
+                    <div className={styles.logo} onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
+                         style={{cursor: 'pointer'}}>
+                        <img src="/logo.svg" alt="Red Panda logo"/>
                     </div>
 
                     <div className={styles.controls}>
@@ -52,7 +53,8 @@ const Header = () => {
                             ))}
                         </select>
 
-                        <button className={styles.cta} onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
+                        <button className={styles.cta}
+                                onClick={() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'})}>
                             {t('header.contactUs')}
                         </button>
                     </div>

@@ -12,6 +12,7 @@ export const TranslationProvider = ({
     children: React.ReactNode;
     lang: string;
     setLang: (lang: string) => void;
+    dict: Record<string, unknown>;
 }) => {
     const [dict, setDict] = useState<Dictionary>({});
     const [loading, setLoading] = useState(true);

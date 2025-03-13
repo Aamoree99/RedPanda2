@@ -13,6 +13,7 @@ const SidebarNav = () => {
         { id: 'clinic', label: t('header.clinic') },
         { id: 'car-insurance', label: t('header.carInsurance') },
         { id: 'benefits', label: t('header.benefits') },
+        { id: 'reviews', label: t('header.reviews') },
         { id: 'contact', label: t('header.contact') }
     ];
 

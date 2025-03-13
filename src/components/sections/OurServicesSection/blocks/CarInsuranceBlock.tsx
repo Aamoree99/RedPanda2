@@ -12,6 +12,7 @@ const CarInsuranceBlock = () => {
             <div className="container">
                 <div className={styles.inner}>
                     <div className={styles.image}>
+                        <img src="src/assets/carins.jpg" alt="Car Insurance"/>
                         <span className={styles.label}>{t('services.carInsurance.img')}</span>
                     </div>
 

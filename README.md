@@ -1,54 +1,97 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🐼 Red Panda
 
-Currently, two official plugins are available:
+A premium one-page website for **Red Panda** — a company helping foreigners in the Czech Republic with health insurance, visa courses, legal assistance, and more.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> 🔗 **Live preview**: [https://aamoree99.github.io/RedPanda2](https://aamoree99.github.io/RedPanda2)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Features
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- Premium Apple-style design (minimal, elegant, dark theme)
+- System-based and **dark theme** 
+- Fully **multilingual** with JSON-based translation files
+- Fixed **sidebar navigation** on desktop, hamburger menu on mobile
+- Structured sections:
+  - Hero
+  - About Us
+  - Our Services
+  - Why Choose Us
+  - Contact Form
+  - Social Media & Phone
+
+---
+
+## 🛠️ Technologies Used
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- Responsive & mobile-first layout
+- Custom i18n (multi-language) setup
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── assets/            # Images and icons
+├── components/        # UI components
+├── i18n/              # Localization logic
+├── sections/          # Page sections (Hero, About, Services, etc.)
+├── styles/            # Tailwind and global styles
+└── App.tsx            # Main component
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Getting Started
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+# Install dependencies
+npm install
+
+# Run in development mode
+npm run dev
+
+# Build for production
+npm run build
+```
+
+---
+
+## 🌐 Localization
+
+Translation files are stored in `/public/locales/`.
+
+```
+public/locales/en.json
+public/locales/ru.json
+public/locales/uk.json
+public/locales/cs.json
+```
+
+You can add more languages by adding additional JSON files.
+
+---
+
+## 🧩 Roadmap
+
+- Smooth animations and transitions
+- Backend integration for contact form
+- Admin panel or CMS for editing text
+- SEO improvements
+
+---
+
+## 📄 License
+
+This project was created for educational and practice purposes. All brand and visual assets belong to Red Panda.
+
+---
+
+### 🐾 Built with ❤️ by [Aamoree](https://github.com/Aamoree99)
 ```
